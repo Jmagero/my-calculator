@@ -1,41 +1,38 @@
- html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    font: 100 14px 'Roboto';
-  }
+html {
+  box-sizing: border-box;
+}
 
-  #root {
-      width: 80%;
-      margin: 0 auto;
-      height: 100vh;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  button {
-      width: 10%;
-      height: 80px;
-      background: #e0e0e7;
-      border: solid 0.5px white;
-      border-top: 0;
-      border-left: 0;
-  }
+#root {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
 
-  .calculator-display{
-    width: 40%;
-    background-color: grey;
-    text-align: right;
-  }
+button {
+  width: 10%;
+  height: 80px;
+  background: #e0e0e7;
+  border: solid 0.5px white;
+  border-top: 0;
+  border-left: 0;
+}
 
-  .zero {
-      width: 20%;
-  }
+.calculator-display {
+  width: 40%;
+  background-color: grey;
+  text-align: right;
+}
 
-  .button-right {
-      background-color:#fd5602;
-  }
+.zero {
+  width: 20%;
+}
 
-   
+.button-right {
+  background-color: #fd5602;
+}
