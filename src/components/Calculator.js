@@ -29,37 +29,35 @@ class Calculator extends React.Component {
   render() {
     return (
       <div className="wrapper">
+        <div className="button-row calculator-display">0</div>
         <div className="button-row">
-          <button className="calculator-display">0</button>
+          <button type='button' value='AC' onClick={this.handleClick}>AC</button>
+          <button type='button' value='+/-' onClick={this.handleClick}>+/-</button>
+          <button type='button' value='%' onClick={this.handleClick}>%</button>
+          <button className="button-right" type='button' value='÷' onClick={this.handleClick}>÷</button>
         </div>
         <div className="button-row">
-          <button>AC</button>
-          <button>+/-</button>
-          <button>%</button>
-          <button className="button-right">÷</button>
+          <button type='button' value='7' onClick={this.handleClick}>7</button>
+          <button type='button' value='8' onClick={this.handleClick}>8</button>
+          <button type='button' value='9' onClick={this.handleClick}>9</button>
+          <button className="button-right" type='button' value='x' onClick={this.handleClick}>*</button>
         </div>
         <div className="button-row">
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button className="button-right">*</button>
+          <button type='button' value='4' onClick={this.handleClick}>4</button>
+          <button type='button' value='5' onClick={this.handleClick}>5</button>
+          <button type='button' value='6' onClick={this.handleClick}>6</button>
+          <button type='button' value='-' onClick={this.handleClick} className="button-right">-</button>
         </div>
         <div className="button-row">
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button className="button-right">-</button>
+          <button type='button' value='1' onClick={this.handleClick}>1</button>
+          <button type='button' value='2' onClick={this.handleClick}>2</button>
+          <button type='button' value='3' onClick={this.handleClick}>3</button>
+          <button className="button-right" type='button' value='+' onClick={this.handleClick}>+</button>
         </div>
         <div className="button-row">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button className="button-right">+</button>
-        </div>
-        <div className="button-row">
-          <button className="zero">0</button>
-          <button>-</button>
-          <button className="button-right">=</button>
+          <button className="zero" type='button' value='0' onClick={this.handleClick}>0</button>
+          <button type='button' value='-' onClick={this.handleClick}>-</button>
+          <button className="button-right" type='button' value='=' onClick={this.handleClick}>=</button>
         </div>
       </div>
     );
