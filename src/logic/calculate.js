@@ -1,4 +1,3 @@
-/* eslint-disable */
 import operate from './operate';
 
 function isNumber(item) {
@@ -73,10 +72,9 @@ export default function calculate(obj, buttonName) {
         next: null,
         operation: null,
       };
-    } else {
-      // '=' with no operation, nothing to do
-      return {};
     }
+    // '=' with no operation, nothing to do
+    return {};
   }
 
   if (buttonName === '+/-') {
