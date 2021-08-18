@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React from 'react';
-// import Button from './Button';
+import calculate from '../logic/calculate';
+import operate from '../logic/operate';
 
 class Calculator extends React.Component {
   constructor(props){
