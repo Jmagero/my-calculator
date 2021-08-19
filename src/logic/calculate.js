@@ -1,4 +1,3 @@
-/* eslint-disable */ 
 import operate from './operate';
 
 function isNumber(item) {
@@ -34,13 +33,13 @@ export default function calculate(obj, buttonName) {
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next) {
-        return { 
-          total: obj.total, 
+        return {
+          total: obj.total,
           next: obj.next + buttonName,
-          operation: obj.operation, 
+          operation: obj.operation,
         };
       }
-      return { 
+      return {
         next: buttonName,
         total: obj.total,
         operation: obj.operation,
@@ -70,18 +69,18 @@ export default function calculate(obj, buttonName) {
           operation: obj.operation,
         };
       }
-      return { 
+      return {
         next: `${obj.next}.`,
         total: obj.total,
         operation: obj.operation,
       };
     }
     if (obj.operation) {
-      return { 
+      return {
         next: '0.',
         total: obj.total,
         operation: obj.operation,
-     };
+      };
     }
     if (obj.total) {
       if (obj.total.includes('.')) {
@@ -91,7 +90,7 @@ export default function calculate(obj, buttonName) {
           operation: obj.operation,
         };
       }
-      return { 
+      return {
         total: `${obj.total}.`,
         next: obj.next,
         operation: obj.operation,
@@ -108,14 +107,13 @@ export default function calculate(obj, buttonName) {
         next: null,
         operation: null,
       };
-    } else {
-           // '=' with no operation, nothing to do
-           return {
-            total: obj.total,
-            next: obj.next,
-            operation: obj.operation,
-          };
     }
+    // '=' with no operation, nothing to do
+    return {
+      total: obj.total,
+      next: obj.next,
+      operation: obj.operation,
+    };
   }
 
   if (buttonName === '+/-') {
