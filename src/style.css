@@ -52,11 +52,11 @@ button {
   align-items: center;
 }
 
-.button-row{
+.button-row {
   width: 100%;
 }
 
-.button-wrapper{
+.button-wrapper {
   min-width: 350px;
   font-size: 0.9rem;
 }
