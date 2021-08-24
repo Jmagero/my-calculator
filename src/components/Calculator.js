@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
@@ -19,13 +18,15 @@ const Calculator = () => {
     }
   };
   return (
-    <div className="wrapper"
-    style={{
-      display: 'flex',
-      justifyContent: "space-between"
-    }}>
-       <h3>Let's do some Math!</h3>
-       <div className="button-wrapper">
+    <div
+      className="wrapper"
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+      }}
+    >
+      <h3>Let&apos;s do some Math!</h3>
+      <div className="button-wrapper">
         <div className="button-row calculator-display">0</div>
         <div className="button-row">
           <button type="button" value="AC" onClick={handleClick}>AC</button>
@@ -56,7 +57,7 @@ const Calculator = () => {
           <button type="button" value="-" onClick={handleClick}>-</button>
           <button className="button-right" type="button" value="=" onClick={handleClick}>=</button>
         </div>
-       </div>
+      </div>
     </div>
   );
 };

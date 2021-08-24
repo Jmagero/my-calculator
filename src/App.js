@@ -1,32 +1,30 @@
-/* eslint-disable */
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  BrowserRouter as Route,
   Switch,
-  Route
-} from "react-router-dom";
+} from 'react-router-dom';
 import Calculator from './components/Calculator';
 import NavBar from './NavBar';
-import Home from './Home'
-import Quote from './Quote'
+import Home from './Home';
+import Quote from './Quote';
 
 class App extends React.PureComponent {
   render() {
     return (
-      <React.Fragment>
+      <>
         <NavBar />
         <Switch>
           <Route exact path="/">
             <Calculator />
           </Route>
-          <Route path='/Home'>
+          <Route path="/Home">
             <Home />
           </Route>
-          <Route path='*'>
+          <Route path="*">
             <Quote />
           </Route>
         </Switch>
-      </React.Fragment>
+      </>
     );
   }
 }
