@@ -18,36 +18,45 @@ const Calculator = () => {
     }
   };
   return (
-    <div className="wrapper">
-      <div className="button-row calculator-display">0</div>
-      <div className="button-row">
-        <button type="button" value="AC" onClick={handleClick}>AC</button>
-        <button type="button" value="+/-" onClick={handleClick}>+/-</button>
-        <button type="button" value="%" onClick={handleClick}>%</button>
-        <button className="button-right" type="button" value="÷" onClick={handleClick}>÷</button>
-      </div>
-      <div className="button-row">
-        <button type="button" value="7" onClick={handleClick}>7</button>
-        <button type="button" value="8" onClick={handleClick}>8</button>
-        <button type="button" value="9" onClick={handleClick}>9</button>
-        <button className="button-right" type="button" value="x" onClick={handleClick}>*</button>
-      </div>
-      <div className="button-row">
-        <button type="button" value="4" onClick={handleClick}>4</button>
-        <button type="button" value="5" onClick={handleClick}>5</button>
-        <button type="button" value="6" onClick={handleClick}>6</button>
-        <button type="button" value="-" onClick={handleClick} className="button-right">-</button>
-      </div>
-      <div className="button-row">
-        <button type="button" value="1" onClick={handleClick}>1</button>
-        <button type="button" value="2" onClick={handleClick}>2</button>
-        <button type="button" value="3" onClick={handleClick}>3</button>
-        <button className="button-right" type="button" value="+" onClick={handleClick}>+</button>
-      </div>
-      <div className="button-row">
-        <button className="zero" type="button" value="0" onClick={handleClick}>0</button>
-        <button type="button" value="-" onClick={handleClick}>-</button>
-        <button className="button-right" type="button" value="=" onClick={handleClick}>=</button>
+    <div
+      className="wrapper"
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+      }}
+    >
+      <h3>Let&apos;s do some Math!</h3>
+      <div className="button-wrapper">
+        <div className="button-row calculator-display">0</div>
+        <div className="button-row">
+          <button type="button" value="AC" onClick={handleClick}>AC</button>
+          <button type="button" value="+/-" onClick={handleClick}>+/-</button>
+          <button type="button" value="%" onClick={handleClick}>%</button>
+          <button className="button-right" type="button" value="÷" onClick={handleClick}>÷</button>
+        </div>
+        <div className="button-row">
+          <button type="button" value="7" onClick={handleClick}>7</button>
+          <button type="button" value="8" onClick={handleClick}>8</button>
+          <button type="button" value="9" onClick={handleClick}>9</button>
+          <button className="button-right" type="button" value="x" onClick={handleClick}>*</button>
+        </div>
+        <div className="button-row">
+          <button type="button" value="4" onClick={handleClick}>4</button>
+          <button type="button" value="5" onClick={handleClick}>5</button>
+          <button type="button" value="6" onClick={handleClick}>6</button>
+          <button type="button" value="-" onClick={handleClick} className="button-right">-</button>
+        </div>
+        <div className="button-row">
+          <button type="button" value="1" onClick={handleClick}>1</button>
+          <button type="button" value="2" onClick={handleClick}>2</button>
+          <button type="button" value="3" onClick={handleClick}>3</button>
+          <button className="button-right" type="button" value="+" onClick={handleClick}>+</button>
+        </div>
+        <div className="button-row">
+          <button className="zero" type="button" value="0" onClick={handleClick}>0</button>
+          <button type="button" value="-" onClick={handleClick}>-</button>
+          <button className="button-right" type="button" value="=" onClick={handleClick}>=</button>
+        </div>
       </div>
     </div>
   );
