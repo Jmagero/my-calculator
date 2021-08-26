@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import {screen, render} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
-import Calculator from '..components/NavBar';
+import NavBar from '../NavBar';
 
 it('renders NavBar', () => {
     const tree = renderer.create(NavBar)
