@@ -72,7 +72,7 @@ describe('Tests for calculate function when ', () => {
       next: 10,
       operation: '+',
     };
-      expect(calculate(obj, '=')).toStrictEqual({ next: null, operation: null, total: '12' });
+    expect(calculate(obj, '=')).toStrictEqual({ next: null, operation: null, total: '12' });
   });
 
   test('substracts and returns total', () => {
@@ -81,7 +81,7 @@ describe('Tests for calculate function when ', () => {
       next: 5,
       operation: '-',
     };
-      expect(calculate(obj, '=')).toStrictEqual({ next: null, operation: null, total: '5' });
+    expect(calculate(obj, '=')).toStrictEqual({ next: null, operation: null, total: '5' });
   });
 
   test('divides and returns total', () => {
@@ -90,7 +90,7 @@ describe('Tests for calculate function when ', () => {
       next: 5,
       operation: '÷',
     };
-      expect(calculate(obj, '=')).toStrictEqual({ next: null, operation: null, total: '2' });
+    expect(calculate(obj, '=')).toStrictEqual({ next: null, operation: null, total: '2' });
   });
 
   test('returns the modulas', () => {
@@ -99,6 +99,6 @@ describe('Tests for calculate function when ', () => {
       next: 3,
       operation: '%',
     };
-      expect(calculate(obj, '=')).toStrictEqual({ next: null, operation: null, total: '1' });
+    expect(calculate(obj, '=')).toStrictEqual({ next: null, operation: null, total: '1' });
   });
 });
