@@ -10,3 +10,9 @@ it("renders Home", ()=>{
     .toJSON();
     expect(tree).toMatchSnapshot();
 })
+
+it("renders Welcome page", () =>{
+    render(<Home />)
+    const title = screen.getByText('Welcome to our page!');
+    expect(title).toBeInTheDocument();
+})
