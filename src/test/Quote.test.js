@@ -10,3 +10,9 @@ it("renders Quote", ()=>{
     .toJSON();
     expect(tree).toMatchSnapshot();
 })
+
+it("renders the quote", () =>{
+    render(<Quote />)
+    const quote = screen.getByText('Mathematics is not about numbers,equations, computations or algorithms: its about understanding- Willian Paul Thurston');
+    expect(quote).toBeInTheDocument();
+})
