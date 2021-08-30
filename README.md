@@ -9,7 +9,7 @@
 ![image](https://user-images.githubusercontent.com/52098394/129923462-ce9698d3-c9f2-4fb8-b939-a09c7f7a5114.png)
 
 ## Live
-![live](https://math-calculator-app.herokuapp.com/)
+https://math-calculator-app.herokuapp.com/
 
 ## Built With
 
